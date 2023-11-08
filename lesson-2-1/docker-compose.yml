@@ -1,0 +1,33 @@
+version: '3.9'
+
+services:
+  single-container:
+    build: .
+  # quick-sort:
+  #   build: .
+  #   ports:
+  #     - '3000:3000'
+  #   environment:
+  #     - PORT=3000
+  #   command: node quickSort.js
+  # cocktail-sort:
+  #   build: .
+  #   ports:
+  #     - '3001:3001'
+  #   environment:
+  #     - PORT=3001
+  #   command: node cocktailSort.js
+  # comb-sort:
+  #   build: .
+  #   ports:
+  #     - '3002:3002'
+  #   environment:
+  #     - PORT=3002
+  #   command: node combSort.js
+  # bubble-sort:
+  #   build: .
+  #   ports:
+  #     - '3003:3003'
+  #   environment:
+  #     - PORT=3003
+  #   command: node bubbleSort.js
