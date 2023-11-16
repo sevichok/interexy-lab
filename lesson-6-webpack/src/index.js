@@ -1,4 +1,5 @@
 import getCharacters from "./api"
+import './styles.css'
 
 const cube3 = document.getElementById('cube3')
 const row3 = document.getElementById('row3')
@@ -8,7 +9,7 @@ const row4 = document.getElementById('row4')
 const characterUrl = 'https://rickandmortyapi.com/api/character'
 getCharacters(characterUrl)
 
-const worker = new Worker('../src/worker.js')
+const worker = new Worker(new URL('../src/worker.js', import.meta.url))
 
 const move3 = (elem) => {
     setTimeout(() => {
