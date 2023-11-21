@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-require('webpack')
+// require('webpack')
 
 module.exports = {
     mode: 'development',
@@ -21,7 +21,6 @@ module.exports = {
                 test: /\.ts$/,
                 exclude: /node_modules/,
                 use: ['ts-loader'],
-                // include: [path.resolve(__dirname, 'src')]
             },
             {
                 test: /\.css$/,
@@ -35,9 +34,7 @@ module.exports = {
         },
         port: 8080,
         open: true,
-        // hot: true,
         compress: true,
-        // historyApiFallback: true
     },
     plugins: [
         new HtmlWebpackPlugin({
